@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: urL(images/pattern-background-desktop.svg);
+    min-height: 100vh;
+    background-color: #E0E8FF;
+}
+.card-Ux {
+    max-width: 450px;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    background-color: #ffff;
+}
+.card-Ux > img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+} 
+.card-Ux .info-card {
+    padding: 40px 38px;
+}
+.card-Ux .info-card > h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #223457;
+    font-weight: bold;
+    font-size: 28px;
+}
+.card-Ux .info-card > p {
+    text-align: center;
+    line-height: 1.8;
+    color: #bbb;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.card-Ux .info-card .sm-bx {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: #F8F9FE;
+    margin-bottom: 2rem;
+}
+.card-Ux .info-card .sm-bx  .info-sm-bx {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.card-Ux .info-card .sm-bx .info-sm-bx p:first-of-type {
+   font-weight: bold;
+   color: #223457;
+   font-size: 1.1rem;
+   margin-bottom: 5px;
+}
+.card-Ux .info-card .sm-bx .info-sm-bx p:last-of-type {
+    font-weight: bold;
+   color: #bbb;
+   font-size: 1.1rem;
+}
+.card-Ux .info-card .sm-bx > h4 {
+    color:#9189E5;
+    text-decoration: underline;
+    transition: .2s all;
+    font-weight: bold;
+    cursor: pointer;
+} 
+.card-Ux .info-card .sm-bx > h4:hover {
+    color: #382AE1;
+}
+.card-Ux .info-card button {
+    width: 100%;
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: #766CF1;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s all;
+}
+.card-Ux .info-card button:hover {
+    background-color: #382AE1;
+}
+.card-Ux .info-card .cancel {
+    cursor: pointer;
+    transition: .2s all;
+    color: #223457;
+}
+.card-Ux .info-card .cancel:hover {
+    color: #766CF1;
+}
+@media (max-width:375px) {
+    body {
+        padding: 60px 13px;
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: cover;
+    }
+    .card-Ux .info-card {
+        padding: 40px 20px;
+    }
+    .card-Ux .info-card .sm-bx {
+        padding: 28px 15px;
+    }
+}
